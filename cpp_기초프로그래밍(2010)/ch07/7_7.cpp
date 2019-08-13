@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+struct namecard{
+	 char name[20];
+	 char job[30];
+	 char tel[20];
+	 char email[40];
+};
+
+void structPrn(namecard temp);  
+void structInput(namecard *pTemp);
+
+void main()
+{
+ namecard  x, y, z;
+
+  structInput(&x);   //함수의 호출
+  structInput(&y);
+  structInput(&z);
+
+ cout<<"\n 이름   직업    연락처               이메일 ";
+ cout<<"\n===========================================================";
+ structPrn(x);	
+ structPrn(y);
+ structPrn(z);
+ cout<<"\n===========================================================\n";
+}
+
+void structPrn(namecard temp)     //함수의 정의
+{
+  cout<<"\n"<<temp.name<<"\t"<<temp.job<<"\t"<<temp.tel<<"\t"<<temp.email;
+}
+
+ void structInput(namecard *pTemp)
+ {
+    namecard temp;
+	cout<<"\n이름을 입력하세요=>";
+	cin>>pTemp->name;
+	cout<<"직업을 입력하세요=>";
+	cin>>pTemp->job;
+	cout<<"연락처를 입력하세요=>";
+	cin>>pTemp->tel;
+	cout<<"이메일을 입력하세요=>";
+	cin>>pTemp->email;
+ }
