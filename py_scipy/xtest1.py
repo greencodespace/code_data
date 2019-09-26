@@ -5,7 +5,7 @@
 #-----------------------------------------------
 #  file_name : xtest1.py                                  
 #  theme :  scipy_1st_test_code
-#  start :  2019, 05
+#  start :
 #  last_uodate :
 #  kw    :                                       
 #  from  :                                       
