@@ -8,8 +8,8 @@
 #  start :
 #  last_uodate :
 #  kw    :                                       
-#  from  :                                       
-#  ref   :                                       
+#  from  :  mycode                                     
+#  ref   :                                      
 #------------------------------------------------
 
 from numpy import *
